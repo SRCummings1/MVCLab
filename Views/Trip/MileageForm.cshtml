@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "MileageForm";
+}
+
+<h1>Mileage Form</h1>
+
+<form action="MileageResult" method="post">
+    <label for="mpg">Mileage (MPG)</label>
+    <input id="mpg" type="number" name="mpg" step="0.1" placeholder="mpg" min="0" max="55" />
+    <br />
+    <label for="gallons">Gallons in Tank (MPG)</label>
+    <input id="gallons" type="number" name="gallons" step="0.001" placeholder="gallons" min="0" max="55" />
+
+    <br />
+    <span style="color: blue;"> Trip Distance</span><input id="gallons" type="number" name="trip" step="0.001" placeholder="Trip Distance" min="0" />
+
+    <input type="submit" value="Calculate Trip" />
+
+</form>
